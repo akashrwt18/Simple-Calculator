@@ -18,6 +18,10 @@ class Calculator {
         return a * b;
     }
 
+    public static double mod(double a, double b) {
+        return a % b;
+    }
+
     public static void main(String agrs[]) {
         Scanner sc = new Scanner(System.in);
         int ch;
@@ -61,6 +65,13 @@ class Calculator {
                     a = sc.nextDouble();
                     b = sc.nextDouble();
                     System.out.println("Multiplication is " + multiply(a, b));
+                    break;
+
+                case 5: 
+                    System.out.println("Enter value of a and b : ");
+                    a = sc.nextDouble();
+                    b = sc.nextDouble();
+                    System.out.println("Modulo of a mod b is " + mod(a, b));
                     break;
 
                 case 0:
